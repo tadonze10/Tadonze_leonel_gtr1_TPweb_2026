@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Mon mini-site</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Page de contact</h1>
+        </header>
+        
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="presentation.html">Présentation</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="container">
+            <main>
+                <h2>Formulaire de contact</h2>
+                <p>Veuillez remplir le formulaire pour envoyer un message</p>
+                <form action="">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                    <br>
+                    <br>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                    <br>
+                    <br>
+                    <label for="email">Adresse email :</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+                    <br>
+                    <br>
+                    <label for="telephone">Numéro de téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="+237 6 XX XX XX XX" required>
+                    <br>
+                    <br>
+                    <label for="motif">Motif du message</label>
+                    <select name="motif" id="motif" required>
+                        <option value="">Choisir un motif</option>
+                        <option value="information">Demande d'information</option>
+                        <option value="stage">Demande de stage</option>
+                        <option value="projet">Proposition de projet</option>
+                        <option value="autre">Autre demande</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="domaine">Domaine d'intérêt</label>
+                    <select name="domaine" id="domaine">
+                        <option value="">Domaine d'intérêt</option>
+                        <option value="cybersecurite">Cybersécurité</option>
+                        <option value="ia">Intelligence Artificielle</option>
+                        <option value="reseau">Réseau informatique</option>
+                        <option value="python">Programmation en Python</option>
+                    </select>
+                    <br>
+                    <br>
+                    <p>Statut du visiteur</p>
+                    <input type="radio" id="etudiant" name="statut" value="etudiant" required>
+                    <label for="etudiant">Etudiant</label>
+                    <br>
+                    <input type="radio" id="enseignant" name="statut" value="enseignant">
+                    <label for="enseignant">Enseignant</label>
+                    <br>
+                    <input type="radio" id="professionnel" name="statut" value="professionnel">
+                    <label for="professionnel">Professionnel</label>
+                    <br>
+                    <br>
+                    <label for="message">Message :</label>
+                    <br>
+                    <textarea name="message" id="message" cols="40" rows="5" placeholder="Ecrivez votre message ici" required></textarea>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="confirmation" id="confirmation" required>
+                    <label for="confirmation">Je confirme que les informations saisies sont correctes</label>
+                    <br>
+                    <br>
+                    <button type="submit">Envoyer</button>
+                    <button type="reset">Effacer</button>
+                </form>
+            </main>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 - Mon mini-site</p>
+        </footer>
+    </div>
+</body>
+</html>
